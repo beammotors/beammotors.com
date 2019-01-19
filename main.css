@@ -1,14 +1,61 @@
 .background_color {
-  background-color: black;
+  background-color: #202020;
 }
 
 .main_title {
 	color: #ffffff;
-
+	font: ;
+	font-family: 'Montserrat', "sans-serif";
+	font-size: 100px;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 16px;
+    /*animation:blinkingText 5s infinite;*/
+    animation-name:blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
 }
 
-.footer {
+.center_bottom {
+	color: #ffffff;
+	font-family: 'Montserrat', "sans-serif";
+	font-size: 15px;
+	font-weight: 100;
+	letter-spacing: 1px;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes blinker {
+	0%{opacity: 2.0;}
+	50%{opacity: 0.0;}
+	100%{opacity: 2.0;}
 
 }
+
+
+
+/*@keyframes blinkingText{
+   0%{     color: pink;    }
+   20%{    color: transparent; }
+   20%{    color: transparent; }
+   20%{    color:transparent;  }
+   100%{   color: blue;    }
+}
+
+
 
