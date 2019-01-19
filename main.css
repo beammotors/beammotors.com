@@ -1,8 +1,10 @@
 .background_color {
-  background-color: #343434;
+  background-color: black;
 }
 
-.name_style{
+.main_title {
+	color: #ffffff;
+	font: ;
 
 }
 
@@ -10,8 +12,3 @@
 
 }
 
-
-h1 {
-  color: #ffffff;
-  margin-left: ;
-}
