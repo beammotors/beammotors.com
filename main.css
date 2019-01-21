@@ -4,30 +4,29 @@
 
 .main_title {
 	color: #ffffff;
-	font: ;
-	font-family: 'Montserrat', "sans-serif";
-	font-size: 100px;
-    left: 0;
-    line-height: 200px;
-    margin: auto;
-    margin-top: -100px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    letter-spacing: 16px;
-    /*animation:blinkingText 5s infinite;*/
-    animation-name:blinker;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  font-family: 'Montserrat', "sans-serif";
+	font-size: 8vw;
+  left: 0;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 16px;
+  /*animation:blinkingText 5s infinite;*/
+  animation-name:blinker;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
 }
 
 .center_bottom {
 	color: #ffffff;
 	font-family: 'Montserrat', "sans-serif";
-	font-size: 15px;
+	font-size: 2vw;
 	font-weight: 100;
 	letter-spacing: 1px;
     left: 0;
