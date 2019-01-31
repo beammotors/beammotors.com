@@ -1,39 +1,58 @@
-.body_specs {
+.body-specs {
   background-color: #202020;
   min-height: 35rem;
 }
 
+/*------------------H1 resize------------------------------*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 576px) {  
+  h1 {font-size:1.5rem;}
+  h2 {} /*1rem = 16px*/
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  h1 {font-size:2rem;} /*1rem = 16px*/
+  h2 {}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  h1 {font-size:2.5rem;} /*1rem = 16px*/
+  h2 {}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  h1 {font-size:5rem;} /*1rem = 16px*/    
+  h2{}
+}
+
+h2 {
+  font-weight: 100;
+}
+
+.masthead{
+  background-color: #202020;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+}
 
 .site-heading {
   color: white;
   font-family: 'Montserrat',"sans-serif";
-  font-size: 5rem;
   font-weight: 300;
   animation-name:blinker;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  padding-top: 15rem;
   text-align: center;
 }
-
 .subheading {
   color: white;
   font-family: 'Montserrat',"sans-serif";
-  font-weight: 200;t',"sans-serif";
-  font-size: 1rem;
   text-align: center;
-  padding-bottom: 4rem;
-
-
 }
-
-
-@media(min-width:576px){}
-@media(min-width:768px){}
-@media(min-width:992px){}
-@media(min-width:1200px){}
-
 .animation {
   animation-name:blinker;
   animation-duration: 2s;
@@ -41,32 +60,88 @@
   animation-iteration-count: infinite;
 
 }
-
 @keyframes blinker {
-	0%{opacity: 2.0;}
-	50%{opacity: 0.0;}
-	100%{opacity: 2.0;}
+  0%{opacity: 2.0;}
+  50%{opacity: 0.0;}
+  100%{opacity: 2.0;}
 
 }
 
-.signup_background {
-  background:#228B22;
+
+
+.mission-section {
+  background-color: #909090;
 }
 
-.mc_embed_signup {
-	background:#202020; 
+.mission-statement {
+    font-family: 'Montserrat',"sans-serif";
+    color: white;
+    text-align: center;
+}
+
+
+.newsletter-section{
+  background-color: #FFA500;
+
+}
+.mc-signup {
   color:white;
   position: relative;
-	clear:left; 
-	font:14px 'Montserrat', "sans-serif";
+  clear:left; 
+  font:14px 'Montserrat', "sans-serif";
   width:50%;
 }
 
-.mc_embed_signup_scroll {
+.top-buffer { 
+  margin-top:50px; 
+  background:#FFA500;
+}
 
-  text-align: center;
+.bottom-buffer {
+  margin-top:50px; 
+  background:#FFA500;
+}
+
+.input_field {
+  padding-bottom: 3px;
 
 }
+
+.footer-style{
+  background-color: #90EE90;
+
+}
+
+.icons{
+  padding-top: 1rem;
+  align-content: center;
+}
+
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+
+
+
+
 
 
 
