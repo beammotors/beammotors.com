@@ -1,21 +1,52 @@
-.background_color {
+.body_specs {
   background-color: #202020;
+  height: 100%;
+  min-height: 35rem;
+  position: relative;
+
 }
 
-.main_title {
-	color: #ffffff;
-  font-family: 'Montserrat', "sans-serif";
-	font-size: 8vw;
-  left: 0;
-  line-height: 200px;
-  margin: auto;
-  margin-top: -100px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat',"sans-serif";
+  font-weight: 700;
+}
+
+
+.masthead .masthead-bg {
   position: absolute;
-  top: 50%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   width: 100%;
-  text-align: center;
-  letter-spacing: 16px;
-  /*animation:blinkingText 5s infinite;*/
+  min-height: 35rem;
+  height: 100%;
+}
+
+
+.masthead-content-h1{
+  color: #FFC0CB;
+  font-size: 7rem;
+  font-family: 'Montserrat',"sans-serif";
+  animation:blinkingText 5s infinite;
+}
+
+.masthead .masthead-content p {
+  font-size: 1.2rem;
+}
+
+.masthead .masthead-content p strong {
+  font-weight: 700;
+}
+
+
+.animation {
   animation-name:blinker;
   animation-duration: 2s;
   animation-timing-function: linear;
@@ -24,7 +55,9 @@
 }
 
 .center_bottom {
-	color: #ffffff;
+  border-style: solid;
+  border-width: medium;
+	color: #588304;
 	font-family: 'Montserrat', "sans-serif";
 	font-size: 2vw;
 	font-weight: 100;
@@ -45,6 +78,21 @@
 	100%{opacity: 2.0;}
 
 }
+
+
+.mc_embed_signup {
+	background:#202020; 
+  color:#FFC0CB;
+  position: relative;
+	clear:left; 
+	font:14px 'Montserrat', "sans-serif";
+  width:50%;
+
+
+}
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
 
 
 
