@@ -1,22 +1,61 @@
 .body_specs {
   background-color: #202020;
   height: 100%;
-  min-height: 35rem;
-  position: relative;
 
 }
 
+header.masthead {
+  background-color: #202020;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  
+}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: white;
   font-family: 'Montserrat',"sans-serif";
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  text-align: center;
+  animation-name:blinker;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
+header.subheading {
+
+  font-family: 'Montserrat',"sans-serif";
+  font-size: 24px;
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 200px 0;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+
+
+/*
 
 .masthead .masthead-bg {
   position: absolute;
@@ -44,7 +83,7 @@ h6 {
 .masthead .masthead-content p strong {
   font-weight: 700;
 }
-
+*/
 
 .animation {
   animation-name:blinker;
