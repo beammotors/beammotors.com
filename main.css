@@ -1,61 +1,251 @@
-.background_color {
+.body-specs {
   background-color: #202020;
+    /* background-color: pink; */
+    overflow-x: hidden;
+    min-height: 35rem;
 }
 
-.main_title {
-	color: #ffffff;
-	font: ;
-	font-family: 'Montserrat', "sans-serif";
-	font-size: 100px;
-    left: 0;
-    line-height: 200px;
-    margin: auto;
-    margin-top: -100px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    letter-spacing: 16px;
-    /*animation:blinkingText 5s infinite;*/
-    animation-name:blinker;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+/*------------------H1 resize------------------------------*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 576px) {
+  h1 {font-size:1.5rem;}
+  h2 {} /*1rem = 16px*/
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  h1 {font-size:2rem;} /*1rem = 16px*/
+  h2 {}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {font-size:2.5rem;} /*1rem = 16px*/
+  h2 {}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {font-size:8rem;} /*1rem = 16px*/
+  h2{}
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.masthead{
+  /*background-color: #202020;*/
+  /* overflow: hidden; */
+  /* overflow-x: hidden; */
+  padding-top: 20rem;
+  padding-bottom: 11rem;
+  /* height: 100%; */
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 80%, #161616 100%), url("../img/background_main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 
 }
 
-.center_bottom {
-	color: #ffffff;
-	font-family: 'Montserrat', "sans-serif";
-	font-size: 15px;
-	font-weight: 100;
-	letter-spacing: 1px;
-    left: 0;
-    line-height: 200px;
-    margin: auto;
-    margin-top: -100px;
-    position: absolute;
-    top: 90%;
-    width: 100%;
-    text-align: center;
-}
 
+.site-heading {
+  color: white;
+  font-family: 'Montserrat',"sans-serif";
+  font-weight: 300;
+  animation-name:blinker;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  text-align: center;
+}
+.subheading {
+  color: white;
+  font-family: 'Montserrat',"sans-serif";
+  text-align: center;
+}
+.animation {
+  animation-name:blinker;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
 @keyframes blinker {
-	0%{opacity: 2.0;}
-	50%{opacity: 0.0;}
-	100%{opacity: 2.0;}
+  0%{opacity: 2.0;}
+  50%{opacity: 0.0;}
+  100%{opacity: 2.0;}
+
+}
+
+
+.mission-section {
+  padding-top: 100px;
+    padding-bottom: 100px;
+  /* background-color: #202020; */
+    background-color: #E6E6E6;
+        color: black;
+
+
+
+}
+
+.mission-statement {
+    font-family: 'Montserrat',"sans-serif";
+    text-align: center;
+}
+
+
+.newsletter-section{
+  background-color: #202020;
+  padding-top: 50px;
+
+}
+.mc-signup {
+  color:white;
+  position: relative;
+  clear:left;
+  font: 14px 'Montserrat', "sans-serif";
+  width:50%;
+}
+
+/*
+.top-buffer {
+  margin-top:50px;
+  background:#FFA500;
+}
+
+.bottom-buffer {
+  margin-top:50px;
+  background:#FFA500;
+}*/
+
+.input_field {
+  padding-bottom: 3px;
+
+}
+
+.footer-style{
+  /*background-color: #202020;*/
+  padding-top: 20px;
+
+}
+
+.footer-copyright {
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-size: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.icons{
+  padding-top: 1rem;
+  background-color: #202020;
+  padding-bottom: 1rem;
+}
+
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.fa-twitter {
+  color: black;
+  font-size: 2.5rem;
+
+}
+
+
+.fa-instagram:hover {
+  color: white;
+
+}
+
+.fa-twitter:hover {
+  color: white;
+
+}
+
+
+.fa-envelope-o {
+  font-size: 2.5rem;
+ padding-bottom: 2rem;
+}
+
+
+#mce-EMAIL {
+  font:16px 'Montserrat', "sans-serif";
+  font-weight: 300;
+  width: 20rem;
+  color: white;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+
+  text-align: center;
+  border: none;
+  background-color: black;
+     border-radius: 6px;
+}
+
+#mce-EMAIL:focus {
+  /* background-color: #444444; */
+        background-color: black;
+        color: white;
+        outline: none;
 
 }
 
 
 
-/*@keyframes blinkingText{
-   0%{     color: pink;    }
-   20%{    color: transparent; }
-   20%{    color: transparent; }
-   20%{    color:transparent;  }
-   100%{   color: blue;    }
+button {
+  background-color: white;
+    /* background-color: #202020; */
+  color: black;
+  font:16px 'Montserrat', "sans-serif";
+    font-weight: 400;
+    letter-spacing: 0.001rem;
+  padding: 14px 20px;
+  /* margin: 8px 0; */
+  border: none;
+  cursor: pointer;
+  width: 10rem;
+
+
+   /* border-radius: 6px; */
 }
 
 
 
+button:hover {
+  border: none;
+  opacity: 0.5;
+  /* box-shadow: 5px 5px #888888; */
+
+}
+
+
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
