@@ -33,10 +33,19 @@ h2 {
 }
 
 .masthead{
-  background-color: #202020;
-  padding-top: 12rem;
-  padding-bottom: 10rem;
+  /*background-color: #202020;*/
+  overflow: hidden;
+  padding-top: 15rem;
+  padding-bottom: 11rem;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/background_main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
 }
+
 
 .site-heading {
   color: white;
@@ -68,9 +77,10 @@ h2 {
 }
 
 
-
 .mission-section {
-  background-color: #909090;
+  padding-top: 50px;
+  background-color: #202020;
+  padding-bottom: 50px;
 }
 
 .mission-statement {
@@ -81,7 +91,8 @@ h2 {
 
 
 .newsletter-section{
-  background-color: #FFA500;
+  background-color: #202020;
+  padding-top: 50px;
 
 }
 .mc-signup {
@@ -90,8 +101,10 @@ h2 {
   clear:left; 
   font:14px 'Montserrat', "sans-serif";
   width:50%;
+
 }
 
+/*
 .top-buffer { 
   margin-top:50px; 
   background:#FFA500;
@@ -100,7 +113,7 @@ h2 {
 .bottom-buffer {
   margin-top:50px; 
   background:#FFA500;
-}
+}*/
 
 .input_field {
   padding-bottom: 3px;
@@ -108,13 +121,23 @@ h2 {
 }
 
 .footer-style{
-  background-color: #90EE90;
+  /*background-color: #202020;*/
+  padding-top: 20px;
+  
+}
 
+.footer-copyright {
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-size: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .icons{
   padding-top: 1rem;
-  align-content: center;
+  background-color: #202020;
+  padding-bottom: 1rem;
 }
 
 .fa {
