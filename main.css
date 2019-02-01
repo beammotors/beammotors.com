@@ -1,52 +1,84 @@
 .body-specs {
   background-color: #202020;
-    /* background-color: pink; */
-    overflow-x: hidden;
-    min-height: 35rem;
+  overflow-x: hidden;
+  min-height: 35rem;
 }
 
 /*------------------H1 resize------------------------------*/
-/* Small devices (landscape phones, 544px and up) */
+/* Small devices phone - vertical*/
+@media (max-width: 575.98px){
+  h1 {font-size:2.5rem;}
+  h2 {font-size: 1.5rem;}
+  .form-layout {width: 45vw;}
+  .icons{margin-right: 2rem;}
+  .signupbtn{
+    padding: 10px 10px;
+    width: 10.5rem;
+  }
+
+}
+/* Small devices phone - horizontal */
 @media (min-width: 576px) {
-  h1 {font-size:1.5rem;}
-  h2 {} /*1rem = 16px*/
+  h1 {font-size:2rem;}
+  h2 {font-size:1rem;} /*1rem = 16px*/
+  .form-layout {width: 40vw;}
+  .icons{margin-right: 2rem;}
+  .signupbtn{
+    padding: 16px 16px;
+    width: 10rem;
+  }
 }
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Medium devices ipad -(tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  h1 {font-size:2rem;} /*1rem = 16px*/
-  h2 {}
+  h1 {font-size:5rem;} /*1rem = 16px*/
+  h2 {font-size: 2rem;}
+  .form-layout {width: 40vw;}
+  .icons{margin-right: 2rem;}
+  .signupbtn{
+    padding: 16px 16px;
+    width: 10rem;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  h1 {font-size:2.5rem;} /*1rem = 16px*/
-  h2 {}
+  h1 {font-size:4rem;} /*1rem = 16px*/
+  h2 {font-size: 1rem;}
+  .form-layout {width: 40vw;}
+  .icons{margin-right: 2rem;}
+  .signupbtn{
+    padding: 16px 16px;
+    width: 10rem;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   h1 {font-size:8rem;} /*1rem = 16px*/
-  h2{}
+  h2 {font-size: 2rem;}
+  .form-layout {
+    width: 40vw;}
+  .icons{margin-right: 0.5rem;}
+  .signupbtn{
+    padding: 10px 10px;
+    width: 10rem;
+  }
 }
 
 h2 {
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .masthead{
-  /*background-color: #202020;*/
-  /* overflow: hidden; */
-  /* overflow-x: hidden; */
   padding-top: 20rem;
   padding-bottom: 11rem;
-  /* height: 100%; */
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 80%, #161616 100%), url("../img/background_main.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-
 }
 
 
@@ -83,9 +115,8 @@ h2 {
 .mission-section {
   padding-top: 100px;
     padding-bottom: 100px;
-  /* background-color: #202020; */
     background-color: #E6E6E6;
-        color: black;
+    color: black;
 
 
 
@@ -110,17 +141,6 @@ h2 {
   width:50%;
 }
 
-/*
-.top-buffer {
-  margin-top:50px;
-  background:#FFA500;
-}
-
-.bottom-buffer {
-  margin-top:50px;
-  background:#FFA500;
-}*/
-
 .input_field {
   padding-bottom: 3px;
 
@@ -134,10 +154,11 @@ h2 {
 
 .footer-copyright {
   text-align: center;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   font-size: 0.5rem;
-  padding-top: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .icons{
@@ -154,9 +175,7 @@ h2 {
 }
 
 /* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
+
 
 /* Set a specific color for each brand */
 
@@ -168,24 +187,24 @@ h2 {
 
 
 .fa-instagram {
-  color: black;
+  color: white;
   font-size: 2.5rem;
 }
 
 .fa-twitter {
-  color: black;
+  color: white;
   font-size: 2.5rem;
 
 }
 
 
 .fa-instagram:hover {
-  color: white;
+  color: black;
 
 }
 
 .fa-twitter:hover {
-  color: white;
+  color: black;
 
 }
 
@@ -193,57 +212,45 @@ h2 {
 .fa-envelope-o {
   font-size: 2.5rem;
  padding-bottom: 2rem;
+
 }
 
 
-#mce-EMAIL {
+.form-layout {
   font:16px 'Montserrat', "sans-serif";
   font-weight: 300;
-  width: 20rem;
   color: white;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-
-  text-align: center;
   border: none;
-  background-color: black;
-     border-radius: 6px;
+  background-color: #202020;
+  border-radius: 6px;
+  text-align: center;
+
 }
 
-#mce-EMAIL:focus {
+#form-layout:focus {
   /* background-color: #444444; */
-        background-color: black;
-        color: white;
-        outline: none;
-
+  background-color: black;
+  color: white;
+  outline: none;
 }
 
-
-
-button {
+.signupbtn {
   background-color: white;
-    /* background-color: #202020; */
   color: black;
+  border-radius: 6px;
   font:16px 'Montserrat', "sans-serif";
-    font-weight: 400;
-    letter-spacing: 0.001rem;
-  padding: 14px 20px;
-  /* margin: 8px 0; */
+  font-weight: 400;
+  letter-spacing: 0.001rem;
   border: none;
   cursor: pointer;
-  width: 10rem;
-
-
-   /* border-radius: 6px; */
+  margin-top: 20px;
 }
 
-
-
-button:hover {
+.signupbtn:hover {
   border: none;
-  opacity: 0.5;
-  /* box-shadow: 5px 5px #888888; */
-
+  color: white;
+  /* opacity: 0.5; */
+  background-color: black;
 }
 
 
