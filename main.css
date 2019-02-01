@@ -7,16 +7,20 @@
 /*------------------H1 resize------------------------------*/
 /* Small devices phone - vertical*/
 @media (max-width: 575.98px){
-  h1 {font-size:2rem;}
-  h2 {font-size: 16px;}
+  h1 {font-size:2.2rem;}
+  h2 {font-size: 24px;}
   .site-heading{
     margin-top: 2rem;
   }
   .form-layout {
     width: 60vw;
   }
+  .form-control{
+    font-size: 8px;
+  }
   .icons{margin-right: 2rem;}
   .signupbtn{
+    font-size: 10px;
     padding: 10px 10px;
     width: 9rem;
   }
@@ -35,8 +39,12 @@
     margin-top: 5rem;
   }
   .form-layout {width: 40vw;}
+  .form-control{
+    font-size: 8px;
+  }
   .icons{margin-right: 2rem;}
   .signupbtn{
+    font-size: 10px;
     padding: 16px 16px;
     width: 10rem;
   }
@@ -55,8 +63,12 @@
     margin-top: 8rem;
   }
   .form-layout {width: 40vw;}
+  .form-control{
+    font-size: 10px;
+  }
   .icons{margin-right: 2rem;}
   .signupbtn{
+    font-size: 10px;
     padding: 16px 16px;
     width: 10rem;
   }
@@ -76,8 +88,12 @@
     margin-top: 10rem;
   }
   .form-layout {width: 40vw;}
+  .form-control{
+    font-size: 12px;
+  }
   .icons{margin-right: 2rem;}
   .signupbtn{
+    font-size: 16px;
     padding: 16px 16px;
     width: 10rem;
   }
@@ -96,9 +112,14 @@
     margin-top: 15rem;
   }
   .form-layout {
-    width: 40vw;}
+    width: 40vw;
+  }
+  .form-control{
+    font-size: 12px;
+  }
   .icons{margin-right: 0.5rem;}
   .signupbtn{
+    font-size: 16px;
     padding: 10px 10px;
     width: 10rem;
   }
@@ -290,7 +311,7 @@ margin: 0 auto;
   background-color: white;
   color: black;
   border-radius: 6px;
-  font:16px 'Montserrat', "sans-serif";
+  font-family: 'Montserrat', "sans-serif";
   font-weight: 400;
   letter-spacing: 0.001rem;
   border: none;
