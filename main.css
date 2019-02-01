@@ -8,16 +8,23 @@
 /* Small devices phone - vertical*/
 @media (max-width: 575.98px){
   h1 {font-size:2rem;}
-  h2 {font-size: 10px;}
+  h2 {font-size: 16px;}
   .site-heading{
     margin-top: 2rem;
   }
-  .form-layout {width: 45vw;}
+  .form-layout {
+    width: 60vw;
+  }
   .icons{margin-right: 2rem;}
   .signupbtn{
     padding: 10px 10px;
-    width: 10.5rem;
+    width: 9rem;
   }
+  .mission-section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
 
 }
 /* Small devices phone - horizontal */
@@ -33,6 +40,11 @@
     padding: 16px 16px;
     width: 10rem;
   }
+  .mission-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
 }
 
 /* Medium devices ipad -(tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -48,6 +60,11 @@
     padding: 16px 16px;
     width: 10rem;
   }
+  .mission-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
 
 }
 
@@ -64,6 +81,11 @@
     padding: 16px 16px;
     width: 10rem;
   }
+  .mission-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -80,6 +102,10 @@
     padding: 10px 10px;
     width: 10rem;
   }
+  .mission-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
 }
 
@@ -93,19 +119,9 @@ h2 {
   padding-bottom: 11rem; */
   /* width: 100%; */
   height: 50vw;
-
-
-
-  /* background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 80%, #161616 100%), url("../img/background_main.jpg"); */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover; */
 }
 
 .wrapper {
-
-    border: solid blue 2px;
     height: 100%;
     /* background-image:url("../img/background_main.jpg"); */
     background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 80%, #161616 100%), url("../img/background_main.jpg");
@@ -116,12 +132,6 @@ h2 {
   -moz-background-size:cover;
   background-position:center;
 margin: 0 auto;
-}
-
-.containerTitle{
-
-  /*width: 80%;*/
-  /* height: 20%; */
 }
 
 
@@ -135,7 +145,6 @@ margin: 0 auto;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   text-align: center;
-  border: solid green 2px;
 }
 .subheading {
   color: white;
@@ -156,22 +165,14 @@ margin: 0 auto;
 
 }
 
-
 .mission-section {
-  padding-top: 100px;
-    padding-bottom: 100px;
     background-color: #E6E6E6;
     color: black;
-
-
-
 }
-
 .mission-statement {
     font-family: 'Montserrat',"sans-serif";
     text-align: center;
 }
-
 
 .newsletter-section{
   background-color: #202020;
@@ -183,7 +184,7 @@ margin: 0 auto;
   position: relative;
   clear:left;
   font: 14px 'Montserrat', "sans-serif";
-  width:50%;
+  width:100%;
 }
 
 .input_field {
@@ -268,11 +269,17 @@ margin: 0 auto;
   border: none;
   background-color: #202020;
   border-radius: 6px;
-  text-align: center;
+
 
 }
 
-#form-layout:focus {
+.form-control{
+  text-align: center;
+
+
+}
+
+.form-layout:focus {
   /* background-color: #444444; */
   background-color: black;
   color: white;
