@@ -1,3 +1,15 @@
+
+@font-face{
+        font-family:"Como W01 Medium";
+        src:url("Fonts/1368065/b2b04e52-6edc-417e-b9a2-ba9af9530fe1.eot?#iefix");
+        src:url("Fonts/1368065/b2b04e52-6edc-417e-b9a2-ba9af9530fe1.eot?#iefix") 
+        format("eot"),url("Fonts/1368065/39dc1818-9580-4a7f-a9a5-c6c1665e63d4.woff2") 
+        format("woff2"),url("Fonts/1368065/72956b5d-cca0-42a7-a9b5-25c61c89bd14.woff") 
+        format("woff"),url("Fonts/1368065/1671ede0-34a5-4b54-8370-218c079a853a.ttf") 
+        format("truetype");
+}
+
+
 .body-specs {
   background-color: #202020;
   overflow-x: hidden;
@@ -145,31 +157,32 @@ h2 {
 .wrapper {
     height: 100%;
     /* background-image:url("../img/background_main.jpg"); */
-    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 80%, #161616 100%), url("../img/background_main.jpg");
-    background-position: center center;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 80%, #161616 100%), url("../img/background_main.jpg");
+  background-position: center center;
   background-repeat:no-repeat;
   background-size:cover;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   background-position:center;
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 
 .site-heading {
 
   color: white;
-  font-family: 'Montserrat',"sans-serif";
+  font-family: "Como W01 Medium";
   font-weight: 300;
-  animation-name:blinker;
+  text-align: center;
+  /*animation-name:blinker;
   animation-duration: 2s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  text-align: center;
+  animation-iteration-count: infinite;*/
+  
 }
 .subheading {
   color: white;
-  font-family: 'Montserrat',"sans-serif";
+  font-family: 'Montserrat', "sans-serif";
   text-align: center;
 }
 .animation {
@@ -191,7 +204,7 @@ margin: 0 auto;
     color: black;
 }
 .mission-statement {
-    font-family: 'Montserrat',"sans-serif";
+    font-family: 'Montserrat', "sans-serif";
     text-align: center;
 }
 
